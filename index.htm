@@ -1,0 +1,1942 @@
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+      }
+      
+      body {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        
+       
+      }
+    
+      /* <!-- How We Work section start --> */
+      .container {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heroDiv {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    margin: 0 50px;
+    padding: 0 20px;
+}
+
+.heroDiv .hero-para {
+    font-size: 24px;
+    line-height: 1.5;
+    max-width: 800px;
+}
+
+.heroDiv .hero_heading {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.hero_span_heading {
+    color: #FCAF17;
+}
+
+.brand_btn {
+    padding: 15px 100px;
+    border-radius: 6px;
+    border: 1px solid #FCAF17;
+    background-color: #FCAF17;
+    opacity: 0.9;
+    color: black;
+    font-size: 18px;
+}
+
+.brand_progressbar {
+    padding: 7px 240px;
+    box-shadow: 3px 3px 3px 4px rgb(230, 175, 73);
+    border-radius: 6px;
+    border: 1px solid #FCAF17;
+    background-color: #FCAF17;
+    opacity: 0.9;
+    color: black;
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .heroDiv .hero_heading {
+        font-size: 40px;
+    }
+    .heroDiv .hero-para {
+        font-size: 16px;
+    }
+    .brand_btn {
+        padding: 12px 30px;
+    }
+    .brand_progressbar {
+        padding: 6px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 80vh;
+    }
+    .heroDiv {
+        gap: 20px;
+        margin: 0 0 20px 0;
+        padding-bottom: 40px;
+    }
+    .heroDiv .hero_heading {
+        font-size: 32px;
+    }
+    .heroDiv .hero-para {
+        font-size: 15px;
+    }
+    .brand_btn, .brand_progressbar {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 70vh;
+    }
+    .heroDiv{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 0.9;
+    margin: 0 50px;
+    padding: 0 20px;
+    margin-top: 70px;
+    }
+    .heroDiv .hero_heading {
+        font-size: 24px;
+    }
+    .heroDiv .hero-para {
+        font-size: 18px;
+    }
+    .brand_btn, .brand_progressbar {
+        padding: 8px 40px;
+        font-size: 12px;
+    }
+}
+
+    
+    /* icon section statrt */
+    
+    .icons{
+      background-color: #FCAF17;
+      color: black;
+      width: 100%;
+      height: 100px;
+    }
+    
+    
+    
+    .iconimg{
+              /* Image takes full width of card */
+      width: 400px; /* Limit the image size */
+      height: auto;
+      font-size: 40px;
+    }
+    
+   
+    
+    @media (min-width: 768px) {
+      .templete-column {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 3.2rem 2rem;
+        gap: 2rem;
+      }
+    }
+    
+    /* For large screens, set to 6 columns */
+    @media (min-width: 1024px) {
+     .templete-column{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 6rem;
+      justify-content: space-evenly;
+      text-align: center;
+      margin: 3.2rem ;
+      align-items: center;
+    
+    }
+    }
+    
+    
+    
+    .iconimg {
+      width: 100%;
+      max-width: 600px; /* Limit image size for smaller screens */
+      height: auto;
+    }
+    
+    
+    
+    
+    
+    /* Adjust font and icon size for extra small screens */
+    @media (max-width: 480px) {
+      .icons{
+        background-color: #FCAF17;
+        color: black;
+        width: 100%;
+        height: auto;
+      }
+      .templete-column {
+        grid-template-columns:  1fr;
+        margin: 3.2rem 2rem;
+        gap: 4rem;
+      }
+     
+      .iconimg {
+        max-width: 200px;
+      }
+      
+    
+     
+      
+    }
+    
+    
+    /* 2nd section start */
+    
+    .secondSetion{
+      background-color: #FCF4EA;
+      margin-top: 20px;
+      height: auto;
+    
+    }
+     
+      .main_heading{
+        font-size: 36px;
+        font-weight: 900;
+        margin-top: 20px;
+      }
+      .span_heading{
+        
+        padding: 10px 30px;
+        border-radius: 6px;
+        border: 1px solid #FCAF17;
+        background-color:#FCAF17;
+      }
+    
+      .para_border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .para_border .border_line{
+        width: 50px;
+        height: auto;
+        border-bottom: 1px solid black;
+      }
+    
+      .grid-three-cols {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        text-align: center;
+        margin: 3.2rem 0;
+        align-items: center;
+      }
+      .card {
+        width: 100%;
+        max-width: 400px; /* Set a smaller max width */
+        margin: 20px auto; /* Center the card and add margin */
+        padding: 15px;
+        border-radius: 12px; /* Rounded corners */
+       
+      }
+      .paddTop{
+        position: relative;
+        top: 100px;
+      }
+      
+      
+      
+      .card-image {
+        width: 100%; /* Image takes full width of card */
+        max-width: 200px; /* Limit the image size */
+        height: auto;
+        margin: 0 auto 15px; /* Center the image and add space below */
+        border-radius: 8px; /* Round image corners */
+        display: block; /* Ensure it is block-level */
+      }
+     .arrowImg{
+        position: relative;
+        left: 150px;
+        top: 60px;
+     }
+    
+     .arrowImManufacturing{
+      position: relative;
+      left: 150px;
+      top: 60px;
+    }
+     .arrowIm{
+        position: relative;
+        left: 170px;
+    
+     }
+     .arrowImDispatch{
+     display: none;
+     }
+     .rotated-image {
+        transform: rotateX(180deg); /* Rotate the image 45 degrees along the X-axis */
+         /* Smooth transition when rotating */
+      }
+      
+      
+      .card-heading {
+        font-size: 24px;
+        margin: 10px 0;
+        color: #333;
+      }
+      
+      .card-paragraph {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.5;
+      }
+    
+      /* testimonail section start */
+     .section-testimonial {
+      background-color: #FCF4EA;
+     }
+     
+     .testimonial_btn{
+      padding: 12px 40px;
+      border-radius: 6px;
+      border: 1px solid #bab2a3;
+      background-color:#FCAF17;
+      font-weight: 900;
+      font-size: 30px;
+      margin-top: 30px;
+     }
+     .rating{
+      padding: 9px 60px;
+      border-radius: 6px;
+      color: white;
+      border: 1px solid #bab2a3;
+      background-color:#5b5a57;
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 20px;
+     }
+     .rating_review{
+      margin-left: 15px;
+     }
+     .reviews_heading{
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 40px;
+      color: black;
+      width: 70%;
+     }
+     .review_para{
+      font-size: 25px;
+      font-weight: 900;
+      margin-top: 40px;
+     }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        margin-top: 9rem;
+        background-color: black;
+        color: white;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+      
+        /* Center slide text vertically */
+        flex-direction: column;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        background-color: rgb(41, 43, 45);
+      }
+      
+      .swiper-client-msg {
+        padding: 5rem 8rem;
+        background-color: rgb(41, 43, 45);
+        border-radius: 10px;
+        text-align: left;
+        position: relative;
+      }
+      
+      .swiper-client-msg::before {
+        content: "";
+        position: absolute;
+        bottom: -10rem;
+        left: 50%;
+        transform: translateX(-50%);
+        /* width: 5rem;
+        height: 5rem; */
+        border: 5rem solid var(--third);
+        border-color: transparent;
+        border-top-color: var(--third);
+      }
+      
+      .swiper-client-msg p::before {
+        content: "\f10d";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        font-size: 5rem;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: #ced3ff;
+      }
+      
+      .swiper-client-msg p::after {
+        /* display: inline-block */
+        content: "\f10e";
+        position: absolute;
+        bottom: 0%;
+        right: 5%;
+      
+        font-size: 5rem;
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: #ced3ff;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: rgb(48, 222, 222);
+      }
+      
+      .swiper-client-data {
+        display: flex;
+        align-items: center;
+        justify-items: start;
+        justify-content: start;
+        gap: 1.4rem;
+        margin-top: 3.2rem;
+      }
+      
+      .swiper-client-data img {
+        max-width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        border: 0.5rem solid #ced3ff;
+      }
+      .verified{
+        max-width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        border: 0.5rem solid #ced3ff;
+        margin-left: 2rem;
+      }
+      
+      .swiper-client-data p:first-child {
+        font-weight: bold;
+        color: var(--heading);
+      }
+    
+      /* Responsive Adjustments for Mobile Devices */
+    @media (max-width: 768px) {
+      .testimonial_btn {
+        padding: 10px 40px;
+        font-size: 24px;
+      }
+    
+      .rating {
+        padding: 8px 40px;
+        font-size: 10px;
+      }
+    
+      .reviews_heading {
+        font-size: 32px;
+        width: 90%;
+        margin: 30px auto;
+      }
+    
+      .review_para {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .testimonial_btn {
+        padding: 8px 30px;
+        font-size: 18px;
+      }
+    
+      .rating {
+        padding: 6px 30px;
+        font-size: 9px;
+      }
+    
+      .reviews_heading {
+        font-size: 24px;
+        width: 100%;
+        margin: 20px auto;
+      }
+    
+      .review_para {
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+    
+    
+    
+    .btnsection{
+      background-color: #FCF4EA;
+      align-items: center;
+      text-align: center;
+      height: 220px;
+    }
+    
+    /* accodian section code */
+    .accodian_section{
+        margin-bottom: 40px;
+    }
+    
+    .accordian_headig{
+      font-size: 50px;
+      font-weight: bolder;
+      margin-top: 50px;
+    }
+    .accordian_btn{
+      padding: 15px 80px;
+      border-radius: 6px;
+      border: 1px solid #FCAF17;
+      background-color: #FCAF17;
+      opacity: 0.9;
+      color: black;
+      font-size: 30px;
+      font-weight: bolder;
+      margin-top: 40px;
+    }
+    .accordion {
+     width: 70%;
+      border: 1px solid hwb(0 95% 4%);
+      overflow: hidden;
+      margin-top: 50px;
+      
+    
+    }
+    
+    .accordion-item {
+      border-bottom: 1px solid #ddd;
+      gap: 30px;
+    }
+    
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: hwb(0 88% 12%);
+      color: black;
+      cursor: pointer;
+      padding: 15px;
+      font-size: 30px;
+      gap: 3rem;
+      font-weight: bold;
+      outline: none;
+      transition: background-color 0.3s ease;
+    }
+    
+    .accordion-header:hover {
+      background-color: hsl(44, 8%, 65%);
+    }
+    
+    .toggle-icon {
+     
+      width: 20px; /* Set the width of the icon */
+      height: 20px; /* Set the height of the icon */
+      transition: transform 0.3s ease;
+      color: #101010;
+    }
+    
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 15px;
+      transition: max-height 0.3s ease;
+      background-color: #fff;
+      font-size: 20px;
+      color: #333;
+    }
+    
+    .accordion-content p {
+      margin: 15px 0;
+    }
+    
+    /* Active class to open the content */
+    .accordion-item.active .accordion-content {
+      max-height: 200px; /* Adjust this to control the expanded height */
+    }
+    
+    .accordion-item.active .toggle-icon {
+      transform: rotate(180deg);
+       /* Rotate icon when expanded */
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .accordion {
+        width: 90%; /* Increase width for mobile */
+      }
+    
+      .accordian_headig {
+        font-size: 30px; /* Smaller heading for mobile */
+        margin-top: 30px; /* Adjust top margin */
+      }
+    
+      .accordian_btn {
+        padding: 10px 40px; /* Reduce padding */
+        font-size: 20px; /* Smaller button font size */
+      }
+    
+      .accordion-header {
+        font-size: 24px; /* Smaller header font size */
+        padding: 10px; /* Adjust padding */
+      }
+    
+      .accordion-content {
+        font-size: 16px; /* Smaller content font size */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .accordian_headig {
+        font-size: 24px; /* Further reduce heading size */
+        margin-top: 20px; /* Further adjust top margin */
+      }
+    
+      .accordian_btn {
+        padding: 8px 20px; /* Further reduce padding */
+        font-size: 18px; /* Further reduce button font size */
+      }
+    
+      .accordion-header {
+        font-size: 20px; /* Further reduce header font size */
+      }
+    
+      .accordion-content {
+        font-size: 14px; /* Further reduce content font size */
+      }
+    }  /* <!-- How We Work section end --> */
+    
+    
+      .mainSection {
+        background-image: url(https://cdn.shopify.com/s/files/1/0706/2336/3312/files/Amabi-Clothing-2.jpg?v=1730452981);
+        background-size: cover; /* Ensures the image covers the full width */
+        background-position: center; /* Centers the background image */
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Ensures the image doesn't repeat */
+        width: 100vw; /* Full viewport width */
+        height: auto; /* Auto height based on content */
+        position: relative;
+    }
+    
+    /* Overlay */
+    .mainSection .overlay {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #101010;
+      opacity: 0.9;
+    }
+    
+    /* Brand heading */
+    .brand_heading {
+      font-size: 36px;
+      font-weight: 900;
+      margin-top: 20px;
+      opacity: 0.9;
+      color: white;
+      padding: 30px;
+    }
+    
+    .brand_span_heading {
+      padding: 5px 15px;
+      border-radius: 6px;
+      border: 1px solid #FCAF17;
+      background-color: #FCAF17;
+      opacity: 0.9;
+      color: black;
+    }
+    
+    /* Brand paragraph border */
+    .brand_para_border {
+      display: flex;
+      text-transform: uppercase;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+      margin-top: 20px;
+      opacity: 0.9;
+      color: white;
+      font-size: 14px;
+    }
+    
+    .brand_para_border .brand_border_line {
+      width: 20px;
+      height: auto;
+      border-bottom: 1px solid white;
+      opacity: 0.9;
+    }
+    
+    /* Grid layout for larger screens */
+    .mainSection .grid-three--cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+      text-align: center;
+      padding: 4.2rem 0;
+      align-items: center;
+      color: white;
+      opacity: 0.9;
+    }
+    .fake{
+      background-color: #FCF4EA;
+      height: 50px;
+    
+    }
+    
+    /* Responsive grid for smaller screens */
+    @media (max-width: 768px) {
+      .mainSection .grid-three--cols {
+        grid-template-columns: 1fr; /* Single column for small screens */
+        gap: 2rem;
+      }
+    
+      .brand_heading {
+        font-size: 28px;
+        padding: 20px;
+      }
+    
+      .brand_para_border {
+        font-size: 12px;
+        gap: 10px;
+      }
+    
+      .common-text--highlight {
+        width: 2.8rem;
+        height: 2.4rem;
+        font-size: 16px;
+      }
+    
+      .choose-center-div img {
+        width: 80%; /* Reduce image size */
+      }
+      
+    }
+    
+    /* Responsive adjustments for very small screens */
+    @media (max-width: 480px) {
+       
+      .brand_heading {
+        font-size: 24px;
+        padding: 15px;
+      }
+    
+      .brand_para_border {
+        font-size: 10px;
+        gap: 5px;
+      }
+    
+      .common-text--highlight {
+        width: 2.5rem;
+        height: 2rem;
+        font-size: 14px;
+      }
+    
+      .choose-center-div img {
+        width: 70%; /* Further reduce image size */
+      }
+      .text-align--left{
+        margin-left: 2rem;
+      }
+     
+      
+    }
+    
+    /* Other common styles */
+    .why-choose--div {
+      margin-bottom: 3.2rem;
+      width: 400px;
+      justify-content: center;
+      margin-left: 4.5rem;
+    }
+
+@media (max-width:720px) {
+      .why-choose--div {
+     
+      width: 300px;
+      
+    }
+}
+  
+    .heading_title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      margin-left: 40px;
+      gap: 10px;
+    }
+    
+    .mainSection .text-align--right .why-choose--div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+      gap: 15px;
+     
+    }
+    
+    .choose-right-div .text-align--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 15px;
+       
+      
+    }
+
+@media (max-width: 720px) {
+  .choose-right-div .text-align--left {
+    padding-left: 1px;
+  }
+}
+
+
+
+    .common-text--highlight {
+      color: black;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: 900;
+      background-color: #FCAF17;
+      opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    
+    .common-para {
+      font-size: 18px;
+      letter-spacing: 1;
+      text-align:left;
+      padding-left: 30px;
+      
+    }
+    
+    .why-choose--div .section-common--title {
+        padding-bottom: 5px;
+      font-size: 20px;
+    }
+   
+    
+    .choose-center-div,
+    .choose-center-div figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      transform-origin: center;
+    }
+    
+    
+    
+    .choose-center-div figure .circleImg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      z-index: -1;
+      width: 100%;
+      height: auto;
+    }
+    
+    
+    .choose-center-div img {
+      width: 100%;
+      height: auto;
+    }
+
+
+    .heading_title_four{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      margin-left: 30px;
+      gap: 10px;
+    }
+    .common-text--highlight_four{
+        color: black;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: 900;
+      background-color: #FCAF17;
+      opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .section-common--title_four{
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .heading_title_three{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 30px;
+      gap: 10px;
+      
+    }
+    .common-text--highlight_three{
+        color: black;
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      font-size: 20px;
+      font-weight: 900;
+      background-color: #FCAF17;
+      opacity: 0.9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .section-common--title_three{
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    
+    
+    
+    /***** End why choose Section *****/
+    
+    
+    
+    
+    
+    
+      
+      
+    
+      /* Media Query for Small Devices (Mobile) */
+    @media (max-width: 768px) {
+        .grid-three-cols {
+          grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+          gap: 0.1rem;
+        }
+      }
+    
+      .grid-three--cols{
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+        gap: 0.1rem;
+      }
+      
+      /* Media Query for Extra Small Devices (Mobile) */
+      @media (max-width: 480px) {
+        .grid-three-cols {
+          grid-template-columns: 1fr; 
+    
+        /* Switch to 1 column */
+        }
+        .grid-three--cols{
+          grid-template-columns: 1fr; /* Switch to 2 columns */
+          gap: 0.1rem;
+        }
+        .card {
+          width: 100%;
+          max-width: 250px; /* Set a smaller max width */
+          margin: 20px auto; /* Center the card and add margin */
+          padding: 15px;
+          border-radius: 12px; /* Rounded corners */
+         
+        }
+        .paddTop{
+            position: relative;
+            top: 10px;
+            
+        }
+    
+        .arrowImg{
+          position: relative;
+          left:-100px ;
+          top: 0px;
+       }
+       .arrowImManufacturing{
+       display: none;
+      }
+        .arrowIm{
+            display: none;
+        }
+    
+        .arrowImDispatch{
+          display: block;
+          position: relative;
+            left: 90px;
+            bottom: 20px;
+         }
+         .rotatedX-image {
+          transform: rotateX(180deg); /* Rotate the image 45 degrees along the X-axis */
+           /* Smooth transition when rotating */
+        }
+      }
+    
+    
+      /* about  section start */
+    
+      .About_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        gap: 50px;
+        max-width: 1200px;
+        margin: 8rem auto;
+        padding: 20px;
+      }
+      
+      .image img {
+        width: 85%;
+        height: auto;
+        border-radius: 8px; /* Optional for rounded corners */
+      }
+      
+      .text-content {
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 2rem;
+      }
+    
+      .about_border{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        color: #7D7D7D;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+      .about_heading{
+        font-size: 36px;
+        font-weight: 900;
+        opacity: 0.9;
+        color: black;
+        
+      }
+      .about_para{
+        font-size: 18px;
+        color: #7D7D7D;
+        letter-spacing: 1;
+      }
+      .border_line{
+        width: 50px;
+        height: auto;
+        border-bottom: 1px solid black;
+      }
+      .cards1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+       
+        
+      }
+      .card1 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(255, 165, 0, 0.5); 
+        gap: 30px;
+      }
+      
+      .card_icon {
+        font-size: 24px;
+        width: 14rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        
+        color: #333;
+      }
+      .card_icon2 {
+        font-size: 24px;
+        width: 16rem;
+        height: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        
+        color: #333;
+      }
+      .fa-solid{
+        color: #FCAF17;
+      }
+      .about_heading_para{
+        gap: 20px;
+      }
+    
+      .about_heading1{
+        font-size: 20px;
+        font-weight: 800;
+        color: black;
+      }
+      
+    
+      @media (max-width: 768px) {
+      .About_container {
+        grid-template-columns: 1fr; /* Single column on mobile */
+        text-align: center; /* Center-align content for better readability */
+        padding: 10px; /* Adjust padding for mobile */
+        gap: 30px;
+      }
+    
+      .image img {
+        width: 100%; /* Full width for mobile */
+      }
+    
+      .about_heading {
+        font-size: 28px; /* Smaller heading on mobile */
+      }
+    
+      .about_para {
+        font-size: 16px; /* Smaller paragraph font size on mobile */
+      }
+    
+      .card1 {
+        flex-direction: column; /* Stack icon and text vertically on mobile */
+        text-align: center;
+        gap: 15px;
+      }
+    
+      .card_icon {
+        width: 6rem; /* Adjust icon size for mobile */
+        height: 6rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+        .card_icon2{
+       font-size: 24px;
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: black;
+        
+        color: #333;
+        }
+
+    }
+    
+      
+     
+    
+      
+      
+    </style>
+    
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body onload="slider()"> 
+    
+        <!-- hero section start -->
+
+        <section class="container">
+          <div class="banner">
+            <div class="slider">
+                <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/backgroundImg.png?v=1730452983" alt="" id="slideImg">
+            </div>
+            <div class="overlay1"></div>
+            <div class="heroDiv">
+                <p class="hero-para">
+                  STRUGGLING WIRH INCONSISTENT MANUFACTURING AND DELAYED DELIVERIES
+                </p>
+        
+                <h1 class="hero_heading">FIND ALL YOUR <span class="hero_span_heading">BRAND</span> NEEDS AT ONE PLACE</h1>
+        
+                <p class="hero-para">
+                  Hassle-Free Design and Manufacturing For Your, Save Time And Watch Your Return Soar By 40% Or More-Let Us Handle The Hard Work, While You focus On Growing Your Business
+                </p>
+                <button class="brand_btn">Book You Free Quote & Consultation</button>
+        
+                <button class="brand_progressbar"></button>
+             
+              </div> 
+          </div>  
+        </section>
+    
+         <section>
+          <div class="container icons">
+            <div class="gird templete-column">
+      
+          <div class="flex">
+            <img src="images/1.png" alt="" class="iconimg">
+          </div>
+      
+          <div class="flex">
+            <img src="images/2.png" alt="" class="iconimg">
+            
+          </div>
+      
+          <div class="flex">
+            <img src="images/3.png" alt="" class="iconimg">
+            
+          </div>
+      
+          <div class="flex">
+            <img src="images/4.png" alt="" class="iconimg">
+           
+          </div>
+      
+          <div class="flex">
+            <img src="images/5.png" alt="" class="iconimg">
+            
+          </div>
+      
+          <div class="flex">
+            <img src="images/6.png" alt="" class="iconimg">
+          </div>
+      
+            </div>
+      
+        </section>
+    
+        <!-- hero section end -->
+    
+           <!-- How We Work section start -->
+    
+        <section class="container secondSetion">
+         <h1 class="main_heading">How <span class="span_heading">We Work</span></h1>
+    
+            <div class="para_border">
+                <div class="border_line"></div>
+                <p>OUR WORK PROCCESS</p>
+                <div class="border_line"></div>
+            </div>
+    
+            <div class="grid grid-three-cols">
+                <div class="card">
+                    <div class="arrowImg">
+                        <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/img14.png?v=1730452980" alt="">
+                    </div>
+                    <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image1.png?v=1730452979" alt="Sample Image" class="card-image img">
+                    <h2 class="card-heading">Consultation</h2>
+                    <p class="card-paragraph">We begin with a detailed consultation to understand your brand’s unique requirements and vision.</p>
+                  </div>
+    
+                <div class="card paddTop">
+                    <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image2.png?v=1730452980" alt="Sample Image" class="card-image">
+                    <h2 class="card-heading">Designing</h2>
+                    <p class="card-paragraph">Collaborate with our team to bring your design concepts to life, ensuring they align with your brand identity.</p>
+                    <div class="arrowIm">
+                        <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/img14.png?v=1730452980" alt="" class="rotated-image">
+                      </div>
+                  </div>
+    
+                <div class="card">
+                    <div class="arrowImManufacturing">
+                        <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/img14.png?v=1730452980" alt="">
+                    </div>
+                    
+                    <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image3.png?v=1730452980" alt="Sample Image" class="card-image">
+                    <h2 class="card-heading">Manufacturing</h2>
+                    <p class="card-paragraph">Our skilled artisans meticulously craft each piece, adhering to the highest quality standards</p>
+                  </div>
+    
+                <div class="card paddTop" >
+                    
+                   
+                    <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image4.png?v=1730452980" alt="Sample Image" class="card-image ">
+                    <h2 class="card-heading">Dispatch</h2>
+                    <p class="card-paragraph">Your custom apparel is delivered to your satisfaction, ready to make a lasting impression.</p>
+    
+                    <div class="arrowImDispatch">
+                        <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/img14.png?v=1730452980" alt="" class="rotatedX-image">
+                    </div>
+                  </div>
+                  
+            </div>
+    
+        </section>
+        <div class="container fake"></div>
+                <!-- How We Work section end -->
+    
+                <!-- reviews section start -->
+    
+              
+                  
+                <section class="container section-testimonial ">
+                     
+                    <button class="testimonial_btn"> GET A FREE QUOTE</button>
+                    <button class="rating">⭐⭐⭐⭐⭐<span class="rating_review">4.9 stars out of 5471, reviews</span></button>
+                    <h1 class="reviews_heading">STORIES LIKE THESE ARE <br/> WHY WE EXIST </h1>
+                    <p class="review_para">We are trying to make growing a business a whole lot easier, quicker, less stressful and more fun.</p>
+                    <!-- Slider main container -->
+                    <!-- Swiper -->
+              <div class="swiper mySwiper ">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                        <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                        </figure>
+                      
+                      <div class="client-data-details">
+                        <p>Lee</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>john</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>Allan</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img loading="lazy" src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>Herry</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>Taylor</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>watson</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>Json</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                   <div class="swiper-slide">
+                  
+                    <div class="swiper-client-msg">
+                      <p>Calvin: You know sometimes when I'm talking, my words can't keep up with my thoughts... I wonder why we think faster than we speak. Hobbes: Probably so we can think twice.</p>
+                    </div>
+                    <div class="swiper-client-data grid grid-two-col ">
+                      <figure>
+                      <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image11.png?v=1730453598" alt="">
+                      </figure>
+                      <div class="client-data-details">
+                        <p>Calvin</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- slide end  -->
+                 
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+                  </div>
+              </section>
+    
+              <!-- button section -->
+               <section class="btnsection container">
+                
+                <button class="testimonial_btn"> GET A FREE QUOTE</button>  
+               </section>
+          
+                <!-- reviews section end -->
+    
+    
+                <!-- Elevate Your Brand with Us section start -->
+    
+                    <section class="mainSection">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <h1 class="brand_heading" style="line-height: revert;" >Elevate Your <span class="brand_span_heading">Brand</span> with Us</h1>
+                            <div class="brand_para_border">
+                                <div class="brand_border_line"></div>
+                                <p>ultimate choice for businesses</p>
+                                <div class="brand_border_line"></div>
+                            </div>
+                        </div>
+                  
+                        <div class="grid grid-three--cols">
+                          <div class="choose-left-div text-align--right">
+                            <div class="why-choose--div" data-aos="zoom-in-up" data-aos-delay="0">
+                             <div class="heading_title">
+                              <p class="common-text--highlight">01</p>
+                              <h3 class="section-common--title">Supreme Comfort</h3>
+                            </div>
+                              <p class="common-para">
+                                Crafted from the softest fabrics, our apparel ensures cozy, comfortable fits for your customers.
+                              </p>
+                            </div>
+                  
+                            <div
+                              class="why-choose--div"
+                              data-aos="zoom-in-up"
+                              data-aos-delay="300"
+                            >
+                            <div class="heading_title">
+                                <p class="common-text--highlight">02</p>
+                                <h3 class="section-common--title">Versatility</h3>
+                              </div>
+                              <p class="common-para">
+                                Tailored to represent your unique brand, our manufacturing caters to your specific style, setting you apart.
+                              </p>
+                            </div>
+                  
+                            <div
+                              class="why-choose--div"
+                              data-aos="zoom-in-up"
+                              data-aos-delay="600"
+                            >
+                            <div class="heading_title_three">
+                                <p class="common-text--highlight_three">03</p>
+                                <h3 class="section-common--title_three">
+                                    Uncompromising<br>Quality</h3>
+                              </div>
+                              <p class="common-para">
+                                Meticulously crafted to exceed your quality expectations, we uphold the highest standards.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
+                            <figure>
+                              <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/hoodimg.png?v=1730452981" alt=" home page " />
+                              <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/circle.png?v=1730452980" alt="cricle img" class="circleImg">
+                            </figure>
+                          </div>
+                          <div class="choose-right-div">
+                            <div
+                              class="why-choose--div text-align--left"
+                              data-aos="zoom-in-up"
+                              data-aos-delay="0"
+                            >
+                            <div class="heading_title_four">
+                                <p class="common-text--highlight_four">04</p>
+                                <h3 class="section-common--title_four ">
+                                    Innovative Designs</h3>
+                              </div>
+                              <p class="common-para">
+                                Multiple Embellishment options whether you want chenille embroidery, direct to garment (DTC), siblimation printing or silkscreen printing. We got you covered.
+                              </p>
+                            </div>
+                  
+                            <div
+                              class="why-choose--div text-align--left"
+                              data-aos="zoom-in-up"
+                              data-aos-delay="300"
+                            >
+                            <div class="heading_title">
+                                <p class="common-text--highlight">05</p>
+                                <h3 class="section-common--title">Custom Fit</h3>
+                              </div>
+                              <p class="common-para">
+                                Our variety of sizes guarantees a perfect fit, boosting customer confidence and comfort.
+                              </p>
+                            </div>
+                  
+                            <div
+                              class="why-choose--div text-align--left"
+                              data-aos="zoom-in-up"
+                              data-aos-delay="600"
+                            >
+                            <div class="heading_title">
+                                <p class="common-text--highlight">06</p>
+                                <h3 class="section-common--title">
+                                    Sustainability</h3>
+                              </div>
+                              <p class="common-para">
+                                Prioritizing eco-friendly practices, we align your brand with a greener future, appealing to conscious consumers.
+                              </p>
+                            </div>
+                            
+                          </div>
+                          
+                        </div>
+                      </section>
+    
+                      <!-- about us section start -->
+                      <section class="container" >
+                        <div class="About_container">
+                        <!-- Left Image Section -->
+                        <div class="image">
+                          <img src="https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image12.png?v=1730452982" alt="Descriptive Text">
+                        </div>
+                        
+                        <!-- Right Text Section -->
+                        <div class="text-content">
+    
+                          <div class="about_border">
+                          <p>About us</p> 
+                          <div class="border_line"></div>
+                        </div>
+    
+                        <h1 class="about_heading" style="line-height: revert;" >Driven by Passion,<br> Defined by <span class="brand_span_heading"> Quality</span></h1>
+                          <p class="about_para">At Amabi Clothing, we are passionate about fashion and dedicated to delivering excellence. With years of experience in the industry, our team of experts knows the ins and outs of clothing production. We believe in the power of clothing to express your identity, and we make it our mission to provide you with the finest apparel.</p>
+    
+                           <!-- Cards Section -->
+          <div class="cards1">
+    
+            <div class="card1">
+              <div class="card_icon">
+              <i class="fa-solid fa-sack-dollar"></i>
+            </div>
+            <div class="about_heading_para">
+              <h1 class="about_heading1">Competitive Pricing</h1>
+              <p class="about_para">Quality fashion doesn't have to break the bank. We offer competitive pricing to suit your budget.</p>
+            </div>
+            </div>
+    
+            <div class="card1">
+              <div class="card_icon2">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="about_heading_para">
+              <h1 class="about_heading1">Exceptional Quality</h1>
+              <p class="about_para">We use the finest materials and state-of-the-art technology to ensure your clothing is of the highest quality.</p>
+              </div>
+    
+            </div>
+    
+          </div>
+        </div>
+                        </div>
+                      </div>
+                      </section>
+                      
+    
+    
+                      <!-- accordian section start -->
+    
+                      <section class="container accodian_section">
+                       <h1 class="accordian_headig">YOU'VE GOT QUESTION,<br>WE'VE GOT ANSWER.</h1>
+                        <div class="acodian_div container">
+    
+                        <div class="accordion">
+                          <div class="accordion-item">
+                              <div class="accordion-header">
+                                <p>What types of apparel do you manufacture?</p>
+                                <i class="fa-solid fa-angle-up toggle-icon"></i>
+                              </div>
+                              <div class="accordion-content">
+                                  <p>We specialize in manufacturing a wide range of apparel including but not limited to t-shirts, hoodies, sweatshirts, polo shirts, jackets, and custom-designed clothing for various purposes like corporate events, promotional merchandise, sports teams, etc.</p>
+                              </div>
+                          </div>
+    
+                      </div>
+          
+    
+                    <div class="accordion">   
+                      <div class="accordion-item">
+                          <div class="accordion-header">
+                            <p>Can I request designs or branding on apparel?</p>
+                            <i class="fa-solid fa-angle-up toggle-icon"></i>
+                          </div>
+                          <div class="accordion-content">
+                              <p>Yes, we offer custom design services! Our team can work with your specific requirements to create personalized designs or incorporate your branding/logo onto the apparel.</p>
+                          </div>
+                      </div>
+                  </div>
+    
+    
+                  <div class="accordion">   
+                    <div class="accordion-item">
+                        <div class="accordion-header">
+                          <p>What is the minimum order quantity for custom apparel?</p>
+                          <i class="fa-solid fa-angle-up toggle-icon"></i>
+                        </div>
+                        <div class="accordion-content">
+                            <p>Clothing, we specialize in crafting high-quality garments with a minimum order quantity of 50 pieces. This allows our clients the flexibility to meet their unique needs while benefiting from our efficient production process. Whether it's custom designs or bulk orders for various purposes, we are dedicated to delivering stylish and durable products, fostering strong partnerships with our clients.</p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="accordion">   
+                  <div class="accordion-item">
+                      <div class="accordion-header">
+                        <p>How ling does it take to manufacture custom apparel?</p>
+                        <i class="fa-solid fa-angle-up toggle-icon"></i>
+                      </div>
+                      <div class="accordion-content">
+                          <p>Production time depends on the complexity of the order and the quantity requested. Typically, it takes 3 weeks from the approval of the final design and order confirmation.</p>
+                      </div>
+                  </div>
+              </div>
+    
+    
+              <div class="accordion">   
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                      <p>Can I get a sample before placing a bulk order?</p>
+                      <i class="fa-solid fa-angle-up toggle-icon"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>No, we don't offer custom samples because our bulk process includes a pre-production sample which is a mandatory step.</p>
+                    </div>
+                </div>
+            </div>
+        
+        <button class="accordian_btn">Book You Consultation Today</button>  
+                      </section>
+                    
+                  
+    
+                
+                <!-- Elevate Your Brand with Us section end -->
+     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script  >
+
+        var slideImg=document.getElementById("slideImg")
+        var images=new Array(
+            "https://cdn.shopify.com/s/files/1/0706/2336/3312/files/backgroundImg.png?v=1730452983",
+            "https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image13.jpg?v=1730452981",
+            "https://cdn.shopify.com/s/files/1/0706/2336/3312/files/image14.jpg?v=1730452981"
+        )
+
+        var leng=images.length;
+        var i=0
+
+        function slider(){
+            if(i>leng-1){
+                i=0
+            }
+            slideImg.src=images[i]
+            i++
+            setTimeout('slider()',3000)
+        }
+    
+    // JavaScript to toggle accordion
+    document.querySelectorAll('.accordion-header').forEach(button => {
+        button.addEventListener('click', () => {
+            const accordionItem = button.parentElement;
+            
+            // Close any open accordions
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                if (item !== accordionItem) {
+                    item.classList.remove('active');
+                    item.querySelector('.toggle-icon').src = 'icons/plus.svg'; // Reset icon
+                }
+            });
+    
+            // Toggle current accordion
+            accordionItem.classList.toggle('active');
+            const toggleIcon = accordionItem.querySelector('.toggle-icon');
+            toggleIcon.src = accordionItem.classList.contains('active') ? 'icons/minus.svg' : 'icons/plus.svg'; // Change icon based on state
+        });
+    });
+    
+    
+    
+    
+    
+    function myFunction(widthSize) {
+        if (widthSize.matches) {
+            // If media query matches
+            const swiper = new Swiper(".swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+    
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        } else {
+            const swiper = new Swiper(".swiper", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+    }
+    
+    const widthSize = window.matchMedia("(max-width: 780px)");
+    // Call listener function at run time
+    myFunction(widthSize);
+    // Attach listener function on state changes
+    widthSize.addListener(myFunction);
+    
+      
+    </script>
+    
+    
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- {% schema %}
+{
+  "name": "Homepage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "homepage_text",
+      "label": "Homepage Text",
+      "default": "Welcome to Our Store!"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %} -->
